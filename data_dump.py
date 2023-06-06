@@ -4,7 +4,7 @@ import json
 
 client = pymongo.MongoClient("mongodb+srv://sahil_josan:samongodbhil5@cluster0.sptya9h.mongodb.net/?retryWrites=true&w=majority")
 
-DATA_FILE_PATH = (r"G:\Udemy\DATA SCIENCE ineuron\VS Code\Internship_project_Bike_Share_Prediction\Data\Bike_Share_Day.csv")
+DATA_FILE_PATH = (r"G:\Udemy\DATA SCIENCE ineuron\VS Code\Internship_project_Bike_Share_Prediction\Data\Bike_Share_Day 2.csv")
 
 DATABASE_NAME = "BIKE_RENTAL"
 
