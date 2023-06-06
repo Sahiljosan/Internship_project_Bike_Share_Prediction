@@ -1,0 +1,14 @@
+[2023-06-06 23:22:07,751] root - INFO - *****************Data Ingestion*****************
+[2023-06-06 23:22:07,751] root - INFO - Export collection data as pandas DataFrame
+[2023-06-06 23:22:07,751] root - INFO - Reading data from database:BIKE_RENTAL and collection: BIKE_SHARING_DAILY
+[2023-06-06 23:22:13,328] root - INFO - Dropping Columns:_id
+[2023-06-06 23:22:13,329] root - INFO - Rows and Columns in df: (731, 16)
+[2023-06-06 23:22:13,329] root - INFO - Save data in future store
+[2023-06-06 23:22:13,330] root - INFO - Create Feature store folder if not available
+[2023-06-06 23:22:13,330] root - INFO - Save df to feature_store_folder
+[2023-06-06 23:22:13,357] root - INFO - Spliting Train and Test data
+[2023-06-06 23:22:13,499] root - INFO - Create dataset directory folder if not exists
+[2023-06-06 23:22:13,502] root - INFO - Save dataset to feature store folder
+[2023-06-06 23:22:13,508] root - INFO - Data Ingestion Artifact :DataIngestionArtifact(feature_store_file_path='G:\\Udemy\\DATA SCIENCE ineuron\\VS Code\\Internship_project_Bike_Share_Prediction\\artifact\\06062023__232207\\data_ingestion\\feature_store\\bike_sharing_data.csv', train_file_path='G:\\Udemy\\DATA SCIENCE ineuron\\VS Code\\Internship_project_Bike_Share_Prediction\\artifact\\06062023__232207\\data_ingestion\\dataset\\train.csv', test_file_path='G:\\Udemy\\DATA SCIENCE ineuron\\VS Code\\Internship_project_Bike_Share_Prediction\\artifact\\06062023__232207\\data_ingestion\\dataset\\test.csv')
+[2023-06-06 23:22:13,508] root - INFO - **********************Data Valiadation**********************
+[2023-06-06 23:22:13,508] root - INFO - Reading base dataframe

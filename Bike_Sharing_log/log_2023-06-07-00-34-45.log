@@ -1,0 +1,32 @@
+[2023-06-07 00:34:47,264] root - INFO - *****************Data Ingestion*****************
+[2023-06-07 00:34:47,264] root - INFO - Export collection data as pandas DataFrame
+[2023-06-07 00:34:47,264] root - INFO - Reading data from database:BIKE_RENTAL and collection: BIKE_SHARING_DAILY
+[2023-06-07 00:34:48,075] root - INFO - Dropping Columns:_id
+[2023-06-07 00:34:48,076] root - INFO - Rows and Columns in df: (731, 16)
+[2023-06-07 00:34:48,076] root - INFO - Save data in future store
+[2023-06-07 00:34:48,076] root - INFO - Create Feature store folder if not available
+[2023-06-07 00:34:48,138] root - INFO - Save df to feature_store_folder
+[2023-06-07 00:34:48,145] root - INFO - Spliting Train and Test data
+[2023-06-07 00:34:48,146] root - INFO - Create dataset directory folder if not exists
+[2023-06-07 00:34:48,146] root - INFO - Save dataset to feature store folder
+[2023-06-07 00:34:48,152] root - INFO - Data Ingestion Artifact :DataIngestionArtifact(feature_store_file_path='G:\\Udemy\\DATA SCIENCE ineuron\\VS Code\\Internship_project_Bike_Share_Prediction\\artifact\\06072023__003447\\data_ingestion\\feature_store\\bike_sharing_data.csv', train_file_path='G:\\Udemy\\DATA SCIENCE ineuron\\VS Code\\Internship_project_Bike_Share_Prediction\\artifact\\06072023__003447\\data_ingestion\\dataset\\train.csv', test_file_path='G:\\Udemy\\DATA SCIENCE ineuron\\VS Code\\Internship_project_Bike_Share_Prediction\\artifact\\06072023__003447\\data_ingestion\\dataset\\test.csv')
+[2023-06-07 00:34:48,153] root - INFO - **********************Data Valiadation**********************
+[2023-06-07 00:34:48,153] root - INFO - Reading base dataframe
+[2023-06-07 00:34:48,156] root - INFO - Replace na value in base df
+[2023-06-07 00:34:48,156] root - INFO - Drop null values columns from base df
+[2023-06-07 00:34:48,157] root - INFO - selecting column name which contains null above 0.2
+[2023-06-07 00:34:48,157] root - INFO - Columns to drop: []
+[2023-06-07 00:34:48,158] root - INFO - Reading train dataframe
+[2023-06-07 00:34:48,160] root - INFO - Reading test dataframe
+[2023-06-07 00:34:48,163] root - INFO - selecting column name which contains null above 0.2
+[2023-06-07 00:34:48,163] root - INFO - Columns to drop: []
+[2023-06-07 00:34:48,164] root - INFO - selecting column name which contains null above 0.2
+[2023-06-07 00:34:48,164] root - INFO - Columns to drop: []
+[2023-06-07 00:34:48,169] root - INFO - Is all required columns present in train_df
+[2023-06-07 00:34:48,169] root - INFO - Is all required columns present in test_df
+[2023-06-07 00:34:48,169] root - INFO - As all column are available in train_df hence detecting data drift
+[2023-06-07 00:34:48,176] root - INFO - As all column are available in train_df hence detecting data drift
+[2023-06-07 00:34:48,181] root - INFO - Write report in yaml file
+[2023-06-07 00:34:48,186] root - INFO - Data Validation Artifact: DataValidationArtifact(report_file_path='G:\\Udemy\\DATA SCIENCE ineuron\\VS Code\\Internship_project_Bike_Share_Prediction\\artifact\\06072023__003447\\data_validation\\report.yaml')
+[2023-06-07 00:34:48,190] root - INFO - we are droping the target column to separate independent features
+[2023-06-07 00:34:48,191] root - INFO - Here we are diffining the dependent feature
