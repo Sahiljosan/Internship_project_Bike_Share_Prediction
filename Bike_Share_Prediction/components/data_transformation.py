@@ -64,8 +64,8 @@ class DataTansformation:
 
             logging.info("we are droping the target column to separate independent features")
             # we have defined the TARGET_COLUMN in config file
-            input_features_train_df = train_df.drop([TARGET_COLUMN],axis=1)
-            input_features_test_df = test_df.drop([TARGET_COLUMN],axis=1)
+            input_features_train_df = train_df.drop(TARGET_COLUMN,axis=1)
+            input_features_test_df = test_df.drop(TARGET_COLUMN,axis=1)
 
             logging.info("Here we are diffining the dependent feature")
             target_feature_train_df = train_df[TARGET_COLUMN]
