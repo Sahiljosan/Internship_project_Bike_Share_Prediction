@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 from Bike_Share_Prediction.entity import config_entity,artifact_entity
-from Bike_Share_Prediction.config import TARGET_COLUMN
+from Bike_Share_Prediction.config import TARGET_COLUMN,NOT_REQUIRED_COL,INSTANT
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import LabelEncoder
 from Bike_Share_Prediction.exception import BikeShareException
@@ -64,8 +64,8 @@ class DataTansformation:
 
             logging.info("we are droping the target column to separate independent features")
             # we have defined the TARGET_COLUMN in config file
-            input_features_train_df = train_df.drop(TARGET_COLUMN,axis=1)
-            input_features_test_df = test_df.drop(TARGET_COLUMN,axis=1)
+            input_features_train_df = train_df.drop([TARGET_COLUMN],axis=1)
+            input_features_test_df = test_df.drop([TARGET_COLUMN],axis=1)
 
             logging.info("Here we are diffining the dependent feature")
             target_feature_train_df = train_df[TARGET_COLUMN]

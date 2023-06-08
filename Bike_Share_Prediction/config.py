@@ -14,5 +14,7 @@ class EnvironmentVariable:
 env_var = EnvironmentVariable()
 mongo_client = pymongo.MongoClient(env_var.mongo_db_url)
 TARGET_COLUMN = "cnt"
+NOT_REQUIRED_COL = "dteday"
+INSTANT = "instant"
 
 print(env_var.mongo_db_url)

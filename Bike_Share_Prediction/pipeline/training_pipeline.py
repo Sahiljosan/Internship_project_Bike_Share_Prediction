@@ -1,7 +1,7 @@
 import os,sys
 import pandas as pd
 import numpy as np
-from Bike_Share_Prediction
+
 from Bike_Share_Prediction.logger import logging
 from Bike_Share_Prediction.exception import BikeShareException
 from Bike_Share_Prediction.predictor import ModelResolver

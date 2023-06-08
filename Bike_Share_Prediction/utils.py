@@ -24,7 +24,7 @@ def get_collection_as_dataframe(database_name:str, collection_name:str)->pd.Data
         df = pd.DataFrame(mongo_client[database_name][collection_name].find())
         if "_id" in df.columns:
             logging.info(f"Dropping Columns:_id")
-            df = df.drop("_id", axis=1)
+            df = df.drop(['_id',"instant",'dteday'], axis=1)
 
         logging.info(f"Rows and Columns in df: {df.shape}")
         return df

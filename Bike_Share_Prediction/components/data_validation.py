@@ -5,7 +5,7 @@ from Bike_Share_Prediction.logger import logging
 from Bike_Share_Prediction.exception import BikeShareException
 from Bike_Share_Prediction.entity import config_entity,artifact_entity
 from typing import Optional
-from Bike_Share_Prediction.config import TARGET_COLUMN
+from Bike_Share_Prediction.config import TARGET_COLUMN,NOT_REQUIRED_COL,INSTANT
 
 from Bike_Share_Prediction import utils
 from scipy.stats import ks_2samp
@@ -63,7 +63,7 @@ class DataValidation:
             missing_columns = []
             for base_columns in base_columns:
                 if base_columns not in current_columns:
-                    logging.info(f"column:[{base} is not available ]")
+                    logging.info(f"column:[{base_columns} is not available ]")
                     missing_columns.append(base_columns)
 
             if len(missing_columns) > 0:

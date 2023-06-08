@@ -5,7 +5,7 @@ import numpy as np
 from Bike_Share_Prediction.entity import config_entity,artifact_entity
 from Bike_Share_Prediction import utils
 from Bike_Share_Prediction.utils import load_object
-from Bike_Share_Prediction.config import TARGET_COLUMN
+from Bike_Share_Prediction.config import TARGET_COLUMN,NOT_REQUIRED_COL
 from Bike_Share_Prediction.exception import BikeShareException
 from Bike_Share_Prediction.predictor import ModelResolver
 from Bike_Share_Prediction.logger import logging
