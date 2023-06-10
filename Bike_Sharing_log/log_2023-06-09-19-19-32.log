@@ -1,0 +1,56 @@
+[2023-06-09 19:19:35,542] root - INFO - *****************Data Ingestion*****************
+[2023-06-09 19:19:35,542] root - INFO - Export collection data as pandas DataFrame
+[2023-06-09 19:19:35,542] root - INFO - Reading data from database:BIKE_RENTAL and collection: BIKE_SHARING_DAILY
+[2023-06-09 19:19:35,830] root - INFO - Dropping Columns:_id
+[2023-06-09 19:19:35,831] root - INFO - Rows and Columns in df: (731, 14)
+[2023-06-09 19:19:35,831] root - INFO - Save data in future store
+[2023-06-09 19:19:35,831] root - INFO - Create Feature store folder if not available
+[2023-06-09 19:19:35,832] root - INFO - Save df to feature_store_folder
+[2023-06-09 19:19:35,841] root - INFO - Spliting Train and Test data
+[2023-06-09 19:19:35,842] root - INFO - Create dataset directory folder if not exists
+[2023-06-09 19:19:35,842] root - INFO - Save dataset to feature store folder
+[2023-06-09 19:19:35,847] root - INFO - Data Ingestion Artifact :DataIngestionArtifact(feature_store_file_path='G:\\Udemy\\DATA SCIENCE ineuron\\VS Code\\Internship_project_Bike_Share_Prediction\\artifact\\06092023__191935\\data_ingestion\\feature_store\\bike_sharing_data.csv', train_file_path='G:\\Udemy\\DATA SCIENCE ineuron\\VS Code\\Internship_project_Bike_Share_Prediction\\artifact\\06092023__191935\\data_ingestion\\dataset\\train.csv', test_file_path='G:\\Udemy\\DATA SCIENCE ineuron\\VS Code\\Internship_project_Bike_Share_Prediction\\artifact\\06092023__191935\\data_ingestion\\dataset\\test.csv')
+[2023-06-09 19:19:35,847] root - INFO - **********************Data Valiadation**********************
+[2023-06-09 19:19:35,847] root - INFO - Reading base dataframe
+[2023-06-09 19:19:35,863] root - INFO - Replace na value in base df
+[2023-06-09 19:19:35,864] root - INFO - Drop null values columns from base df
+[2023-06-09 19:19:35,864] root - INFO - selecting column name which contains null above 0.2
+[2023-06-09 19:19:35,865] root - INFO - Columns to drop: []
+[2023-06-09 19:19:35,865] root - INFO - Reading train dataframe
+[2023-06-09 19:19:35,867] root - INFO - Reading test dataframe
+[2023-06-09 19:19:35,869] root - INFO - selecting column name which contains null above 0.2
+[2023-06-09 19:19:35,870] root - INFO - Columns to drop: []
+[2023-06-09 19:19:35,870] root - INFO - selecting column name which contains null above 0.2
+[2023-06-09 19:19:35,871] root - INFO - Columns to drop: []
+[2023-06-09 19:19:35,876] root - INFO - Is all required columns present in train_df
+[2023-06-09 19:19:35,876] root - INFO - column:[instant is not available ]
+[2023-06-09 19:19:35,876] root - INFO - column:[dteday is not available ]
+[2023-06-09 19:19:35,876] root - INFO - Is all required columns present in test_df
+[2023-06-09 19:19:35,876] root - INFO - column:[instant is not available ]
+[2023-06-09 19:19:35,876] root - INFO - column:[dteday is not available ]
+[2023-06-09 19:19:35,876] root - INFO - Write report in yaml file
+[2023-06-09 19:19:35,878] root - INFO - Data Validation Artifact: DataValidationArtifact(report_file_path='G:\\Udemy\\DATA SCIENCE ineuron\\VS Code\\Internship_project_Bike_Share_Prediction\\artifact\\06092023__191935\\data_validation\\report.yaml')
+[2023-06-09 19:19:35,878] root - INFO - ***********************Data Transformation***********************
+[2023-06-09 19:19:35,881] root - INFO - we are droping the target column to separate independent features
+[2023-06-09 19:19:35,881] root - INFO - Here we are diffining the dependent feature
+[2023-06-09 19:19:35,882] root - INFO - Transforming the features whose dtype is object through label encoder
+[2023-06-09 19:19:35,895] root - INFO - *******************Model Trainer*******************
+[2023-06-09 19:19:35,898] root - INFO - dividing the data into x_train,y_train,x_test,y_test
+[2023-06-09 19:19:35,898] root - INFO - Building Model
+[2023-06-09 19:19:35,905] root - INFO - Store r2_score for train data
+[2023-06-09 19:19:35,906] root - INFO - Store r2_score for test data
+[2023-06-09 19:19:35,906] root - INFO - setting the threshold
+[2023-06-09 19:19:35,906] root - INFO - Checking the overfitting
+[2023-06-09 19:19:35,907] root - INFO - ********************Model Evaluation********************
+[2023-06-09 19:19:35,907] root - INFO - if saved model folder has model the we will compareWhich model is best trained or the model from saved model folder
+[2023-06-09 19:19:35,908] root - INFO - Finding location of transformer model and target encoder
+[2023-06-09 19:19:35,908] root - INFO - Previous trained objects of transformer, model and target encoder
+[2023-06-09 19:19:35,909] root - INFO - Currently trained model objects
+[2023-06-09 19:19:35,914] root - INFO - Accuracy using previous trained model: 1.0
+[2023-06-09 19:19:35,916] root - INFO - Accuracy using current trained model : 1.0
+[2023-06-09 19:19:35,916] root - INFO - Model eval artifact: ModelEvaluationArtifact(is_model_accepted=True, improved_accuracy=0.0)
+[2023-06-09 19:19:35,916] root - INFO - ********************Model Pusher********************
+[2023-06-09 19:19:35,916] root - INFO - Loading Transformer model and target encoder
+[2023-06-09 19:19:35,917] root - INFO - Saving model into model pusher directory
+[2023-06-09 19:19:35,920] root - INFO - Saving model in saved model dir
+[2023-06-09 19:19:35,924] root - INFO - Model Pusher Artifact: ModelPusherArtifact(pusher_model_dir='G:\\Udemy\\DATA SCIENCE ineuron\\VS Code\\Internship_project_Bike_Share_Prediction\\artifact\\06092023__191935\\model_pusher_file\\saved_models', saved_model_dir='saved_models')
