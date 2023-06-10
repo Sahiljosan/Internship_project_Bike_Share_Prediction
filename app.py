@@ -90,14 +90,11 @@ l['registered'] = registered
 df = pd.DataFrame(l,index=[0])
 
 # we do encoding of all features
-# df['season'] = encoder.transform(df['season'])
-# df['mnth'] = encoder.transform(df['mnth'])
+df['season'] = encoder.transform(df['season'])
+df['mnth'] = encoder.transform(df['mnth'])
 df['holiday'] = df['holiday'].map({'yes':1,'no':0})
-# df['weekday'] = encoder.transform(df['weekday'])
+df['weekday'] = encoder.transform(df['weekday'])
 df['workingday'] = df['workingday'].map({'yes':1,'no':0})
-df['season'] = df['season'].map({'spring':0, 'summer':1,'fall':2,'winter':3})
-df['mnth'] = df['mnth'].map({'Jan':0,'feb':1,'mar':2,'april':3, 'may':4,'june':5,'july':6,'aug':7,'sep':8,'oct':9, 'nov':10, 'dec':11})
-df['weekday'] = df['weekday'].map({'sunday':0, 'monday':1, 'tuesday':2, 'wednesday':3, 'thursday':4,'friday':5,'saturday':6})
 
 
 
