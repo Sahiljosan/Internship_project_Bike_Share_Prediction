@@ -1,6 +1,4 @@
 # Bike_Share_Prediction
 Intership Project 
 
-
-https://github.com/Sahiljosan/Internship_project_Bike_Share_Prediction/assets/106590141/4a3137d6-f5ca-4bef-839c-fccf5a882a9b
-
+[https://i.imgur.com/R90YMpL.jpg](https://youtu.be/WswH6Z0Z1-o)
