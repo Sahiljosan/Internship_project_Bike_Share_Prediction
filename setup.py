@@ -16,7 +16,7 @@ def get_requirements()->List[str]:
 
 
 setup(name='Bike_Share_Prediction',
-      version='0.0.1',
+      version='0.0.2',
       description='Bike_Share_Prediction_End_to_End Project',
       author='Sahil Josan',
       author_email='sahiljosan50@gmail.com',
