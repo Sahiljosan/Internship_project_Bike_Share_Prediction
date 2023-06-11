@@ -71,11 +71,23 @@ After pre-processing the data, we visualize our data to gain insights and split 
 6. Model Deployment
 
 ### Data Ingestion
+In the Ingestion Process, we will convert our original dataset which is in Zip format to csv format. After that we will split them into train and test dataset.
+
 ### Data Validation
+In Data validation steps we could use Null value handling, outlier handling, Imbalanced data set handling, Handling columns with standard deviation zero or below a threshold, etc.
+
 ### Data Transformation
+In this step we will transform out data. We will use standard scaler for numeric data and we will convert categorical data into numeric data using label encoding technique so that machine can understand it.
+
 ### Model Training
+Here we will build the Machine Learning model using all regression algorithms.<br>
+![](https://i.imgur.com/u11UVgW.png)
+
 ### Model Evaluation
+Here model evaluation will be done on the model which we got in the model building stage. We can define base accuracy of the model and if model accuracy is higher then base accuracy, then only our model will accept otherwise it will be rejected.
+
 ### Model Deployment
+Here model will be deployed to Streamlit cloud platform.
 
 
 
