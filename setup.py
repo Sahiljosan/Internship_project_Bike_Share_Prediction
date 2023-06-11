@@ -21,6 +21,6 @@ setup(name='Bike_Share_Prediction',
       author='Sahil Josan',
       author_email='sahiljosan50@gmail.com',
       # url='https://www.python.org/sigs/distutils-sig/',
-      packages = find_packages(),
+      packages = find_packages()
       #install_requires = get_requirements()
      )
