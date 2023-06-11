@@ -8,7 +8,12 @@ https://sahiljosan-internship-project-bike-share-prediction-app-oa6k99.streamlit
 [![](https://i.imgur.com/jwEZJCi.jpg])](https://youtu.be/WswH6Z0Z1-o)
 
 ## Table of contents
-
+- [About Project](#about-project)
+- [Documentation](#documentation)
+- [Software and Account Requirement](#software-and-account-requirement)
+- [Tools used](#tools-used)
+- [Project Architecture](#project-architecture) 
+- [Project Pipeline](#project-pipeline)
 
 
 ## About Project
