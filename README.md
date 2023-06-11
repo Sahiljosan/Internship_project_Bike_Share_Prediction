@@ -23,7 +23,7 @@ Apart from interesting real world applications of bike sharing systems, the char
 
 I am considering variables as season, yr,mnth, holiday, weekday, workingday, weathersit, Temp, atemp, hum, windspeed, casual, registered to predict the count of total rental bikes That will be required. <br>
 
-[`BACK TO TOP`](#table-of-content)
+[`Back to top`](#table-of-content)
 
 ## Documentation
 - [Architechture Design](https://drive.google.com/file/d/1fjl6Bh-yNueGRfbugD6XAvTm1qynajng/view?usp=sharing)
