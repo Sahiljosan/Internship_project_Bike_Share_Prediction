@@ -1,4 +1,4 @@
-from setuptools import find_packages, setup
+from setuptools import find_packages,setup
 from typing import List
 
 requirement_file_name = "requirements.txt"
@@ -22,5 +22,5 @@ setup(name='Bike_Share_Prediction',
       author_email='sahiljosan50@gmail.com',
       # url='https://www.python.org/sigs/distutils-sig/',
       packages = find_packages(),
-      install_requires = get_requirements()
+      #install_requires = get_requirements()
      )
