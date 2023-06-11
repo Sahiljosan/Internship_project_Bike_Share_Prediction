@@ -4,6 +4,7 @@ import numpy as np
 import pickle
 import base64
 st.title("Bike Share Prediction")
+col2, col3 = st.columns(2)
 
 def add_bg_from_local(image_file):
        
@@ -32,46 +33,48 @@ encoder = pickle.load(open('target_encoder.pkl','rb'))
 transformer = pickle.load(open('transformer.pkl','rb'))
 
 
-
+with col2:
       
        
 
-season = st.selectbox("Please Select the season",("winter","spring","summer","fall"))
-yr = st.selectbox("Select the year",(2011, 2012))
+       season = st.selectbox("Please Select the season",("winter","spring","summer","fall"))
 
-mnth = st.selectbox("Select the month",('Jan','feb','mar','april', 'may','june','july','aug','sep','oct', 'nov', 'dec'))
-holiday = st.selectbox("Is there a holiday",('yes','no'))
+      
+       mnth = st.selectbox("Select the month",('Jan','feb','mar','april', 'may','june','july','aug','sep','oct', 'nov', 'dec'))
 
+       
 
-weekday = st.selectbox("Select Weekday", ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday',
-       'friday','saturday'))
-workingday = st.selectbox("Is Working day or not",('yes','no'))
+       weekday = st.selectbox("Select Weekday", ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday',
+              'friday','saturday'))
 
+      
 
-weathersit = st.selectbox("Select weathersit",(2,1,3))
-temp = st.text_input("Enter temperature between (0 - 0.5)",0.363)
-temp = float(temp)
+       weathersit = st.selectbox("Select weathersit",(2,1,3))
 
+       
 
-atemp = st.text_input("Enter atemperature between (0 - 0.5)",0.189)
-atemp = float(atemp)
-hum = st.text_input("Enter humadity between (0 - 0.8)",0.805)
-hum = float(hum)
+       atemp = st.text_input("Enter atemperature between (0 - 0.5)",0.189)
+       atemp = float(atemp)
 
+       
 
-windspeed = st.text_input("Enter the windspeed (0 - 0.5)",0.304)
-windspeed = float(windspeed)
+       windspeed = st.text_input("Enter the windspeed (0 - 0.5)",0.304)
+       windspeed = float(windspeed)
 
-casual = st.text_input("Enter casual number (0 - 500)",222)
-registered = st.text_input("Enter registered number (0-1600)",891)
+       
 
+       registered = st.text_input("Enter registered number (0-1600)",891)
 
-#st.title("Prediction")
-
-
-
-
-
+with col3: 
+       #st.title("Prediction")
+       yr = st.selectbox("Select the year",(2011, 2012))
+       holiday = st.selectbox("Is there a holiday",('yes','no'))
+       workingday = st.selectbox("Is Working day or not",('yes','no'))
+       temp = st.text_input("Enter temperature between (0 - 0.5)",0.363)
+       temp = float(temp)
+       hum = st.text_input("Enter humadity between (0 - 0.8)",0.805)
+       hum = float(hum)
+       casual = st.text_input("Enter casual number (0 - 500)",222)
 
 
 
@@ -114,6 +117,6 @@ df = transformer.transform(df)
 y_pred = model.predict(df)
 
 # Add Submit Button
-
-if st.button("Show Counts"):
-       st.header(f"{round(y_pred[0])} bikes will be shared")
+with col2:
+       if st.button("Show Counts"):
+              st.header(f"{round(y_pred[0])} bikes will be shared")
