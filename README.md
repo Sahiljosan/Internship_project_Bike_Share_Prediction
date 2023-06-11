@@ -26,6 +26,23 @@ I am considering variables as season, yr,mnth, holiday, weekday, workingday, wea
 - [Low-Level Design (LLD)](https://drive.google.com/file/d/1f1HejFCB5Rxy3mlcs5Akijsl8Y4Nfzih/view?usp=sharing)
 - [Wireframe](https://drive.google.com/file/d/1MycaOO3XoNX3VWBA9PockZFZXH6s35Z3/view?usp=sharing)
 
+
+## Software and Account Requirement 
+1. [Github Account](https://github.com/Sahiljosan)
+2. [Streamlit Account](https://streamlit.io/)
+3. [VS Code IDE](https://code.visualstudio.com/download)
+4. [GIT CLI](https://git-scm.com/downloads)
+
+## Tools used
+Python programming language and frameworks such as Numpy, Pandas, Scikit-learn, VS Code, git and streamlit are used to build the whole model <br><br>
+![](https://i.imgur.com/EutJMW9.jpg)
+- VS Code is used as IDE.
+- For visualization of the plots, Matplotlib, Seaborn and Plotly are used.
+- Streamlit is used for deployment of the model.
+- Front end development is done using Streamlit.
+- Python Flask is used for backend development.
+- GitHub is used as version control system.
+
 ## Project Architecture 
 ![](https://i.imgur.com/t3jmkkO.png)
 `Data Colleciton` <br>
@@ -45,13 +62,23 @@ Bike sharing dataset is publicaly available on UC Irvine Machine Learning Reposi
 After pre-processing the data, we visualize our data to gain insights and split into two parts, train and test data. After Splitting the data, we use different machine learning algorithms like – Linear Regression, Random Forest Regressor, Decision Tree Regressor to predict the Count of Bike share <br><br>
 ![](https://i.imgur.com/RZK4Jxl.png)
 
+## Project Pipeline 
+1. Data Ingestion
+2. Data Validation
+3. Data Transformation
+4. Model Training
+5. Model Evaluation
+6. Model Deployment
 
-## Tools used
-Python programming language and frameworks such as Numpy, Pandas, Scikit-learn, VS Code, git and streamlit are used to build the whole model <br><br>
-![](https://i.imgur.com/EutJMW9.jpg)
-- VS Code is used as IDE.
-- For visualization of the plots, Matplotlib, Seaborn and Plotly are used.
-- Streamlit is used for deployment of the model.
-- Front end development is done using Streamlit.
-- Python Flask is used for backend development.
-- GitHub is used as version control system.
+### Data Ingestion
+### Data Validation
+### Data Transformation
+### Model Training
+### Model Evaluation
+### Model Deployment
+
+
+
+
+
+
