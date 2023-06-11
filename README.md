@@ -63,12 +63,12 @@ After pre-processing the data, we visualize our data to gain insights and split 
 ![](https://i.imgur.com/RZK4Jxl.png)
 
 ## Project Pipeline 
-1. Data Ingestion
-2. Data Validation
-3. Data Transformation
-4. Model Training
-5. Model Evaluation
-6. Model Deployment
+1. [Data Ingestion](#data-ingestion)
+2. [Data Validation](#data-validation)
+3. [Data Transformation](#data-transformation)
+4. [Model Training](#model-training)
+5. [Model Evaluation](#model-evaluation)
+6. [Model Deployment](#model-deployment)
 
 ### Data Ingestion
 In the Ingestion Process, we will convert our original dataset which is in Zip format to csv format. After that we will split them into train and test dataset.
@@ -89,8 +89,9 @@ Here model evaluation will be done on the model which we got in the model buildi
 ### Model Deployment
 Here model will be deployed to Streamlit cloud platform.<br>
 ![](https://i.imgur.com/AZ8RcV7.png)
-
-
+<br>
+Thanks and Regards 
+Sahil Josan
 
 
 
