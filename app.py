@@ -114,6 +114,6 @@ df = transformer.transform(df)
 y_pred = model.predict(df)
 
 # Add Submit Button
-with col2:
-       if st.button("Show Counts"):
-              st.header(f"{round(y_pred[0])} bikes will be shared")
+
+if st.button("Show Counts"):
+       st.header(f"{round(y_pred[0])} bikes will be shared")
