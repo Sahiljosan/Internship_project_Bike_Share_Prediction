@@ -102,11 +102,11 @@ Here we will build the Machine Learning model using all regression algorithms.<b
 Here model evaluation will be done on the model which we got in the model building stage. We can define base accuracy of the model and if model accuracy is higher then base accuracy, then only our model will accept otherwise it will be rejected.
 
 ### Model Deployment
-Here model will be deployed to Streamlit cloud platform.<br>
+Here model will be deployed to Streamlit cloud platform.<br><br>
 ![](https://i.imgur.com/AZ8RcV7.png)
 <br>
-Thanks and Regards 
-Sahil Josan
+Thanks and Regards <br>
+`Sahil Josan`
 
 [BACK TO TOP](#table-of-content)
 
