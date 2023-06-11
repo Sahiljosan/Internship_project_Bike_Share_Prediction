@@ -28,13 +28,13 @@ I am considering variables as season, yr,mnth, holiday, weekday, workingday, wea
 
 ## Project Architecture 
 ![](https://i.imgur.com/t3jmkkO.png)
-- Data Colleciton
+`Data Colleciton` <br>
 The data for this project is collected from UC Irvine Machine Learning Repository. The link for the data is https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset
 
-- Data Description
+`Data Description` <br>
 Bike sharing dataset is publicaly available on UC Irvine Machine Learning Repository. This dataset contains the hourly and daily count of rental bikes between years 2011 and 2012 in Capital bikeshare system with the corresponding weather and seasonal information.
 
-- Data Pre-processing
+`Data Pre-processing` <br>
     - Checked the datatype of features in dataset using df.info()
     - Checked for Null values, because the null values can affect the accuracy of the model.
     - Perform Label Encoding for the features that have categorical data.
