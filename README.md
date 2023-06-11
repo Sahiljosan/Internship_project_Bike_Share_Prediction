@@ -7,7 +7,7 @@ https://sahiljosan-internship-project-bike-share-prediction-app-oa6k99.streamlit
 ## UI of Project
 [![](https://i.imgur.com/jwEZJCi.jpg])](https://youtu.be/WswH6Z0Z1-o)
 
-## Table of contents
+## Table of content
 - [About Project](#about-project)
 - [Documentation](#documentation)
 - [Software and Account Requirement](#software-and-account-requirement)
@@ -23,6 +23,7 @@ Apart from interesting real world applications of bike sharing systems, the char
 
 I am considering variables as season, yr,mnth, holiday, weekday, workingday, weathersit, Temp, atemp, hum, windspeed, casual, registered to predict the count of total rental bikes That will be required. <br>
 
+[BACK TO TOP](#table-of-content)
 
 ## Documentation
 - [Architechture Design](https://drive.google.com/file/d/1fjl6Bh-yNueGRfbugD6XAvTm1qynajng/view?usp=sharing)
@@ -31,12 +32,15 @@ I am considering variables as season, yr,mnth, holiday, weekday, workingday, wea
 - [Low-Level Design (LLD)](https://drive.google.com/file/d/1f1HejFCB5Rxy3mlcs5Akijsl8Y4Nfzih/view?usp=sharing)
 - [Wireframe](https://drive.google.com/file/d/1MycaOO3XoNX3VWBA9PockZFZXH6s35Z3/view?usp=sharing)
 
+[BACK TO TOP](#table-of-content)
 
 ## Software and Account Requirement 
 1. [Github Account](https://github.com/Sahiljosan)
 2. [Streamlit Account](https://streamlit.io/)
 3. [VS Code IDE](https://code.visualstudio.com/download)
 4. [GIT CLI](https://git-scm.com/downloads)
+
+[BACK TO TOP](#table-of-content)
 
 ## Tools used
 Python programming language and frameworks such as Numpy, Pandas, Scikit-learn, VS Code, git and streamlit are used to build the whole model <br><br>
@@ -47,6 +51,8 @@ Python programming language and frameworks such as Numpy, Pandas, Scikit-learn, 
 - Front end development is done using Streamlit.
 - Python Flask is used for backend development.
 - GitHub is used as version control system.
+
+[BACK TO TOP](#table-of-content)
 
 ## Project Architecture 
 ![](https://i.imgur.com/t3jmkkO.png)
@@ -66,6 +72,8 @@ Bike sharing dataset is publicaly available on UC Irvine Machine Learning Reposi
 `Modelling Process` <br>
 After pre-processing the data, we visualize our data to gain insights and split into two parts, train and test data. After Splitting the data, we use different machine learning algorithms like – Linear Regression, Random Forest Regressor, Decision Tree Regressor to predict the Count of Bike share <br><br>
 ![](https://i.imgur.com/RZK4Jxl.png)
+
+[BACK TO TOP](#table-of-content)
 
 ## Project Pipeline 
 1. [Data Ingestion](#data-ingestion)
@@ -88,6 +96,8 @@ In this step we will transform out data. We will use standard scaler for numeric
 Here we will build the Machine Learning model using all regression algorithms.<br>
 ![](https://i.imgur.com/u11UVgW.png)
 
+[BACK TO TOP](#table-of-content)
+
 ### Model Evaluation
 Here model evaluation will be done on the model which we got in the model building stage. We can define base accuracy of the model and if model accuracy is higher then base accuracy, then only our model will accept otherwise it will be rejected.
 
@@ -98,6 +108,7 @@ Here model will be deployed to Streamlit cloud platform.<br>
 Thanks and Regards 
 Sahil Josan
 
+[BACK TO TOP](#table-of-content)
 
 
 
