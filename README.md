@@ -29,7 +29,7 @@ I am considering variables as season, yr,mnth, holiday, weekday, workingday, wea
 ## Project Architecture 
 
 ## Tools used
-Python programming language and frameworks such as Numpy, Pandas, Scikit-learn, VS Code, git and streamlit are used to build the whole model
+Python programming language and frameworks such as Numpy, Pandas, Scikit-learn, VS Code, git and streamlit are used to build the whole model <br><br>
 ![](https://i.imgur.com/EutJMW9.jpg)
 - VS Code is used as IDE.
 • For visualization of the plots, Matplotlib, Seaborn and Plotly are used.
