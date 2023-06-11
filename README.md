@@ -42,7 +42,7 @@ Bike sharing dataset is publicaly available on UC Irvine Machine Learning Reposi
     Now, the data is prepared to train a machine learning model.
     
 `Modelling Process` <br>
-After pre-processing the data, we visualize our data to gain insights and split into two parts, train and test data. After Splitting the data, we use different machine learning algorithms like – Linear Regression, Random Forest Regressor, Decision Tree Regressor to predict the Count of Bike share<br>
+After pre-processing the data, we visualize our data to gain insights and split into two parts, train and test data. After Splitting the data, we use different machine learning algorithms like – Linear Regression, Random Forest Regressor, Decision Tree Regressor to predict the Count of Bike share <br><br>
 ![](https://i.imgur.com/RZK4Jxl.png)
 
 
