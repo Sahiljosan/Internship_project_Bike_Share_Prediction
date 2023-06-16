@@ -26,7 +26,7 @@ I am considering variables as season, yr,mnth, holiday, weekday, workingday, wea
 [BACK TO TOP](#table-of-content)
 
 ## Documentation
-- [Architechture Design](https://drive.google.com/file/d/1fjl6Bh-yNueGRfbugD6XAvTm1qynajng/view?usp=sharing)
+- [Architecture Design](https://drive.google.com/file/d/1fjl6Bh-yNueGRfbugD6XAvTm1qynajng/view?usp=sharing)
 - [Detailed Project Report](https://drive.google.com/file/d/1eqQ_QtK96_5nM0ilYaSKrAS-N2-gmprO/view?usp=sharing)
 - [High-Level Design (HLD)](https://drive.google.com/file/d/1BatDRodWA36FKkqk4Vdf-n4leqmFdY1L/view?usp=sharing)
 - [Low-Level Design (LLD)](https://drive.google.com/file/d/1f1HejFCB5Rxy3mlcs5Akijsl8Y4Nfzih/view?usp=sharing)
